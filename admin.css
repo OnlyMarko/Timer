@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+*{	 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+table#timers{
+	width: 100%;
+	border: 1px solid #000;
+}
+table#timers th{
+	border: 1px solid #000;
+}
+.button__edit{
+	cursor: pointer;
+}
+.popup__edit{
+	display: none; 
+	padding: 15px;
+	width: 450px;
+	height: 250px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #DCDCDC;
+	border: 1px solid #939393;
+}
+.popup__edit .close{
+	cursor: pointer;
+	top: -15px;
+	right: -15px;
+	position: absolute;
+	border: 1px solid #939393;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__edit .close button{
+	padding: 0;
+	margin: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #dcdcdc;
+}
+.popup__edit h2{
+	margin-bottom: 20px;
+	font-size: 28px;
+	text-align: center;
+}
+.popup__edit label{
+	font-size: 18px;
+}
+.popup__edit input{
+	width: 25%;
+	text-align: center;
+	outline: none;
+}
+.popup__edit input[type='number']::-webkit-inner-spin-button, 
+.popup__edit input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form__button{
+	margin-top: 20px;
+}
+.popup__edit button{
+	margin-top: 10px;
+	padding: 5px 20px;
+	margin-top: 20px;
+	border: 0;
+	font-size: 16px;
+	cursor: pointer;
+	background: #fff;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.form__time{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.form__time label{
+	margin-bottom: 15px;
+}
+.form__time .form__hours, .form__minutes, .form__seconds{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	align-items: center;
+}	
+.form__time input{
+	width: 90%;	
+	border: 1px solid gray;
+}
+form input#id{
+	display: none;
+}
+.popup__success{
+	display: none;
+	background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	position: absolute;
+	height: 50px;
+	width: 150px;
+	right: 45px;
+	bottom: 45px;
+}
+.popup__success span{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 480px) {
+	.popup__edit{
+		width: 90%;
+	}
+}
